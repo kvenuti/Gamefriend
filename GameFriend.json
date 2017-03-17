@@ -1,0 +1,1962 @@
+{
+  "luis_schema_version": "1.3.1",
+  "versionId": "0.1",
+  "name": "GameFriend",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "GameMaker"
+    },
+    {
+      "name": "GameOpinion"
+    },
+    {
+      "name": "GamePlatforms"
+    },
+    {
+      "name": "GamePop"
+    },
+    {
+      "name": "GamePrice"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ConsoleType"
+    },
+    {
+      "name": "GameCreator"
+    },
+    {
+      "name": "GameName"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [
+    {
+      "actionName": "GameMaker",
+      "intentName": "GameMaker",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "names",
+          "entityName": "GameName",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameName"
+        },
+        {
+          "parameterName": "maker",
+          "entityName": "GameCreator",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameCreator"
+        }
+      ]
+    },
+    {
+      "actionName": "GameOpinion",
+      "intentName": "GameOpinion",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "Name",
+          "entityName": "GameName",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameName"
+        },
+        {
+          "parameterName": "console",
+          "entityName": "ConsoleType",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "ConsoleType"
+        }
+      ]
+    },
+    {
+      "actionName": "GamePlatforms",
+      "intentName": "GamePlatforms",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "Name",
+          "entityName": "ConsoleType",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameName"
+        },
+        {
+          "parameterName": "Console",
+          "entityName": "GameName",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "ConsoleType"
+        }
+      ]
+    },
+    {
+      "actionName": "GamePop",
+      "intentName": "GamePop",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "Name",
+          "entityName": "GameName",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameName"
+        }
+      ]
+    },
+    {
+      "actionName": "GamePrice",
+      "intentName": "GamePrice",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "Name",
+          "entityName": "GameName",
+          "required": false,
+          "question": "",
+          "phraseListFeatureName": "GameName"
+        }
+      ]
+    }
+  ],
+  "model_features": [
+    {
+      "name": "ConsoleType",
+      "mode": true,
+      "words": "PlayStation 2,Nintendo DS,Game Boy / Game Boy Color,PlayStation,Wii,Xbox 360,PlayStation 3,PlayStation Portable,Game Boy Advance,Nintendo Entertainment System,Nintendo 3DS current generation consoles,Super Nintendo Entertainment System,PlayStation 4 current generation consoles,Nintendo 64,Sega Genesis,Atari 2600,Xbox,GameCube,Wii U current generation consoles,PlayStation Vita current generation consoles,Master System,Sega Game Gear,Xbox One current generation consoles,TurboGrafx - 16,Sega Saturn,Dreamcast,Sega Pico,WonderSwan,Color TV Game,Intellivision,N - Gage,ColecoVision,Magnavox Odyssey,Atari Lynx,Philips CD - i,Telstar,Atari 5200",
+      "activated": true
+    },
+    {
+      "name": "GameCreator",
+      "mode": true,
+      "words": "Nintendo,EA,Actvision,Ubisoft,Sony,Steam,Freelance,Atari",
+      "activated": true
+    },
+    {
+      "name": "GameName",
+      "mode": true,
+      "words": "metro,Super Mario Bros .,Tetris,Grand Theft Auto III,Half - Life 2,Doom,Metroid,Final Fantasy III,Super Mario Bros . 3,Ms . Pac - Man,World of Warcraft,The Legend of Zelda : A Link to the Past,Super Mario 64,Call of Duty 4 : Modern Warfare,Final Fantasy VII,Mike Tyson ’ s Punch - Out ! !,Chrono Trigger,Resident Evil 4,Metal Gear Solid,The Legend of Zelda : Ocarina of Time,Super Metroid,Contra,Galaga,Castlevania : Symphony of the Night,Street Fighter II,God of War,BioShock,Diablo II,Half - Life,The Elder Scrolls IV : Oblivion,Tecmo Super Bowl,GoldenEye 007,Super Mario Kart,Sonic the Hedgehog,Starcraft,Civilization,SimCity,Mega Man 2,Halo : Combat Evolved,Gran Turismo,Resident Evil 2,Pokemon Red and Blue,Final Fantasy X,EverQuest,Final Fantasy Tactics,Grand Theft Auto IV,Super Mario World,Deus Ex,Guitar Hero,Metal Gear Solid 2 : Sons of Liberty,Super Mario Galaxy,Pac - Man,Battlefield 2,Star Wars : Knights of the Old Republic,Ico,Uncharted 2 : Among Thieves,Tony Hawk ’ s Pro Skater 2,Mass Effect,Adventure,Arkanoid,The Legend of Zelda : Link ’ s Awakening,Star Wars : X - Wing,The Legend of Zelda : Majora ’ s Mask,Grand Theft Auto : San Andreas,Fallout 3,Zork,Soul Calibur,Double Dragon,Dr . Mario,The Sims,Age of Empires,Mortal Kombat II,Rock Band 2,Tomb Raider,Super Bomberman,Mario ’ s Picross,Ninja Gaiden,Command & Conquer,Kingdom Hearts,Final Fantasy II,Super Mario Bros . 2,Left 4 Dead,Okami,Shadow of the Colossus,Metroid Prime,Super Smash Bros . Melee,Warcraft II : Tides of Darkness,Baldur ’ s Gate II : Shadows of Amn,God of War II,The Legend of Zelda : Twilight Princess,Ratchet & Clank : Up Your Arsenal,Medal of Honor : Allied Assault,Skies of Arcadia,The Legend of Zelda : Wind Waker,Silent Hill 2,Counter - Strike,Sonic the Hedgehog 2,Grand Theft Auto : Vice City,Prince of Persia : The Sands of Time,Portal,The Elder Scrolls III : Morrowind,Heroes of Might & Magic III,Donkey Kong,Batman : Arkham Asylum,System Shock 2,Resident Evil,Gears of War,Metal Gear Solid 4 : Guns of the Patriots,Crash Bandicoot : Warped,Halo 2,Tetris Attack,Final Fantasy XII,Earthbound,Sid Meier ’ s Alpha Centauri,Command & Conquer : Red Alert,Advance Wars,Fallout,Team Fortress 2,Splinter Cell : Chaos Theory,Mega Man X,Lemmings,Panzer Dragoon Saga,NHL ’ 94,Warlords,Shadowrun,Twisted Metal 2,Oddworld : Abe ’ s Oddysee,Metroid Fusion,Homeworld,Kingdom Hearts II,Pilotwings,Quake II,Star Wars Jedi Knight : Dark Forces II,Borderlands,Final Fight,Star Fox,Madden NFL ’ 99,Call of Duty 2,Wolfenstein 3D,Diablo,Civilization IV,Maniac Mansion : Day of the Tentacle,Assassin ’ s Creed,Burnout 3 : Takedown,Unreal Tournament 2004,Power Stone 2,Super Castlevania IV,Super Mario RPG,Warcraft III : Reign of Chaos,ActRaiser,Fable,Xenosaga Episode I : Der Wille zur Macht,Asteroids,LittleBigPlanet,Crackdown,Gauntlet,Devil May Cry,Pong,Battlefield 1942,Thief,Geometry Wars : Retro Evolved,Far Cry,Robotron : 2084,X - COM : UFO Defense,Peggle,King ’ s Quest VI,Doom II,Tempest 2000,Braid,Ridge Racer,Bully,Ikaruga,Lode Runner,Gunstar Heroes,Dig Dug,Castlevania,Tekken 3,Phoenix Wright : Ace Attorney,NBA Jam : Tournament Edition,Max Payne,Call of Duty : Modern Warfare 2,Samurai Shodown,NFL 2K5,Vagrant Story,Super Mario World 2 : Yoshi ’ s Island,Marble Madness,Infamous,Planescape : Torment,Kid Icarus,The Chronicles of Riddick : Escape from Butcher Bay,Metal Gear Solid 3 : Snake Eater,Eternal Darkness : Sanity ’ s Requiem,Jak 3,Marvel vs . Capcom 2,Ultima,Call of Duty,NHL 09,Splinter Cell : Pandora Tomorrow,Tactics Ogre,Beyond Good and Evil,Super Mario 2 : Yoshi ' s Island,The Secret of Monkey Island,Legend of Zelda : Ocarina of Time,Legend of Zelda : A Link to the Past,Super Mario 3",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "which platforms is mario party on?",
+      "intent": "GamePlatforms",
+      "entities": []
+    },
+    {
+      "text": "please review mario kart",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "please review team fortress.",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "did you like half life?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "did you enjoy battlefield 2?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "did you dislike pandora tomorrow?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how did you like brink",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what are your thoughts on left 4 dead?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "which platforms is blood money available on?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how can i play deus ex?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "which platform is blood money on?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "would i be able to play ocarina of time on xbox?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "would i be able to play super mario on gamecube?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "would i be able to play tetris on play station 2?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 8,
+          "endPos": 10
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "which consoles can i play bioshock on?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "will i be able to play skyrim on xbox?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "will i be able to play resident evil 4 on gamecube?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "will i be able to play super mario world on play station 2?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 10,
+          "endPos": 12
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how expensive goldeneye 007?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does metal gear solid cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how pricey is the last of us?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "will red dead redemption cost a lot?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is final fantasy vii expensive?",
+      "intent": "GamePrice",
+      "entities": []
+    },
+    {
+      "text": "is super mario bros. expensive?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is mass effect 2 cheap?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who made halo: combat evolved?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "who designed chrono trigger?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who created portal 2?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who constructed doom?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "who built uncharted 2: among thieves?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how many people play super mario bros. 3?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "do a lot of people play world of warcraft?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "is call of duty 4: modern warfare played a lot?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "is grand theft auto v popular?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "do many play super metroid?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "do you recommend shadow of the colossus?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "do a lot of people play portal?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how many people like half-life?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "would you recommend star wars: knights of the old republic?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "how do you like need for speed: pursuit?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how much is half life?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "does splinter:cell conviction cost a lot?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is shank 2 pretty expensive?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what do you estimate hitman: absolution costs?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "did you like breach?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "was fallout: new vegas a fun game?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "do you think i should buy the ship?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how much does it cost to buy red faction: armageddon?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "what are your opinions on f.e.a.r.?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "what are your opinions on metro 2033?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what are your thoughts on necrovision?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "can i play the ship on xbox?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "can i play tetris on play station 3?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 5,
+          "endPos": 7
+        },
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "will i be able to play frogger on xbox 1?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 8,
+          "endPos": 9
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "will i be able to play deadpool on gambeboy advance?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 8,
+          "endPos": 9
+        },
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "find my sandwich",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where's the bank",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you like me?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "navigate to the shore",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find me a hotel",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where do babies come from?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is the sky blue",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you think hillary will win?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who do you think will win the election?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "did you like doom 3?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "who built doom 2?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "did you enjoy the show?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how was super mario 3?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "did a lot of people play super smash bros.?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "did you play doom 1?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how many people play mario kart double dash?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to start my run",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "all done",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "order a drink",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "a large fries and coke please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking a run",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok - heavy breathing - done",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set hr to 130",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end all",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "finished with that jog",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end my chess game",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i am quite happy with my result. would you please wrap up the currently active activity tracker",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "walk start",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "could you please follow my stroll",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "commence swimming",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mein spaziergang ist zuende",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "driving directions to home",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking a hike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set heart rate to 170",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "just ended my walk",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "skydiving go",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "im running now",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i choose you pikachu",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ich bin fertig mit rennen",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "done with my hike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking a bike ride",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "did you like call of duty 4?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "did you like resident evil 4 on xbox?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "dog",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what do you think of mario party 4 ?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what do you think of mario party 4?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "did nintendo make coutner strike?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "did sony make tetris?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "did nintendo make counter strike?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "did actvision make tetris?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "did ea make tetris?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "was tetris made by ea?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "was tetris made by actvision?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "was tetris made by freelance?",
+      "intent": "GameMaker",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "GameCreator",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what do you think about halo?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "did you like minecraft?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does gta 5 cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "did you think sam and max was fun",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "set my target for heart rate to 120",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cat",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'm done",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking this climb",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i am exhausted and am stopping my jog",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "time for a duel",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start playing yellow submarine",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "swim complete",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you like this game",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end tracking this walk",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end my swim",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tetris",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "my hike starts now",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to start swimming",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i start skiing now",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i survived",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sadfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sdifasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "fsijhfsdifj",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set my alarm clock to 7 am",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking my hike in 5 minutes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i enjoyed my bike ride. please end the activity",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end my phone call",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdfasdfasd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sadasfasd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "safasdfasd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking a run once i reach soldiers field",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "these are my last 10 minutes. please stop after that",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my hike is over",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "haoihfrweihf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "change",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where is the nearest mcdonalds",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "wake me up when september ends",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "follow my bike ride please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "let my hr rise to 170",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "commence walk",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sadifhjasdf tetris",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "ulshdflashu fashdflkhdsf ai kashdl tetris",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "asfijsadfjs fasldjf fasdfds tetris?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what do you think of tetris?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much did you like tetris",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what's your opinion of tetris?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "did you like tetris?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "whats your opinion of tetris",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "do you like super mario bros?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "whats your opinion on tetris",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how did you like tetris?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what do you think of java?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what is your opinion of glass?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what did you think of metro?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what did you think about metro?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please review mario kart?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "please review metro?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please review mario?",
+      "intent": "GameOpinion",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "can you play tetris on xbox",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "can i play metro on xbox?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is mario on ps3?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "is dog on xbox 360?",
+      "intent": "GamePlatforms",
+      "entities": [
+        {
+          "entity": "ConsoleType",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "GameName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "what is the price of tetris?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much does super mario bros. cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how much does tetris cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does tetris cost?n",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does mario cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does black hat cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how much does wallet cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what is the price of dog?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much does half life 2 cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much does lord of the rings cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how much does pac man cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how much does tetris cost",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does alladdin cost",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what is the price of doggy doggy?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what is the price of fun time?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how much does funny cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much money is cellyum?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how much does metro cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does dog cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how much does x cost?",
+      "intent": "GamePrice",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how many people play tetris",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how many people play tetris?",
+      "intent": "GamePop",
+      "entities": [
+        {
+          "entity": "GameName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}
